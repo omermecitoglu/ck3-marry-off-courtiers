@@ -1,0 +1,21 @@
+﻿l_english:
+  action_marry_off_courtiers: "[recipient.GetShortUINameNoTooltip] can marry"
+  action_marry_off_courtiers_label: "$action_marry_off_courtiers$"
+  action_marry_off_courtiers_desc: "Your [actor.Custom2('RelationToMe', recipient)] [recipient.GetShortUIName] is eligible to be wed.\n\n#help Arranging a suitable [marriage|E] for [recipient.GetHerHim] could benefit your [court|E].#!"
+  action_marry_off_courtiers_click: "#I Click to find a suitable [spouse|E]#!"
+  action_marry_off_courtiers_combined_label: "[recipient.GetRelationToString( GetPlayer )], [recipient.GetShortUINameNoTooltip]"
+  action_marry_off_courtiers_combined_group_name: "Your courtiers can get married"
+  action_marry_off_courtiers_combined_group_label: "$action_marry_off_courtiers_combined_group_name$"
+  action_marry_off_courtiers_combined_group_description: "Several of your [courtier|E]s are eligible to be wed.\n\n#help Arranging [marriages|E] for them could benefit your [court|E].#!"
+
+  enable_marry_off_courtiers_decision: "Marry off courtiers #N (DISABLED)#!"
+  enable_marry_off_courtiers_decision_desc: "You may want to marry off your single courtiers to attract skilled knights to your army or breed people with inheritable traits."
+  enable_marry_off_courtiers_decision_tooltip: "Enable notifications about single courtiers"
+  enable_marry_off_courtiers_decision_confirm: "Sounds good, I want to be notified about them"
+  enable_marry_off_courtiers_decision_effect: "#P You will be notified about single courtiers.#!"
+
+  disable_marry_off_courtiers_decision: "Marry off courtiers #P (ENABLED)#!"
+  disable_marry_off_courtiers_decision_desc: "$enable_marry_off_courtiers_decision_desc$"
+  disable_marry_off_courtiers_decision_tooltip: "Disable notifications about single courtiers"
+  disable_marry_off_courtiers_decision_confirm: "I'm quite busy right now, dismiss them"
+  disable_marry_off_courtiers_decision_effect: "#N You won't be notified about single courtiers anymore.#!"

@@ -1,0 +1,8 @@
+﻿courtier_can_marry = {
+	root = {
+		is_character_interaction_valid = {
+			recipient = prev
+			interaction = marry_off_interaction
+		}
+	}
+}

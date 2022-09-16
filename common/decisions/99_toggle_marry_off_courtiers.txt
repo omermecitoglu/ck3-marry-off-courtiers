@@ -1,0 +1,65 @@
+﻿enable_marry_off_courtiers_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_toggle_marry_off_courtiers.dds"
+	ai_check_interval = 60
+	
+	sort_order = -2
+
+	desc = enable_marry_off_courtiers_decision_desc
+	selection_tooltip = enable_marry_off_courtiers_decision_tooltip
+
+	is_shown = {
+		is_landed = yes
+		NOT = {
+			has_character_flag = wants_to_marry_off_courtiers
+		}
+		any_courtier = {
+			courtier_can_marry = yes
+			count > 0
+		}
+	}
+
+	effect = {
+		custom_tooltip = enable_marry_off_courtiers_decision_effect
+		hidden_effect = {
+			add_character_flag = wants_to_marry_off_courtiers
+		}
+	}
+
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+}
+
+disable_marry_off_courtiers_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_toggle_marry_off_courtiers.dds"
+	ai_check_interval = 60
+	
+	sort_order = -2
+
+	desc = disable_marry_off_courtiers_decision_desc
+	selection_tooltip = disable_marry_off_courtiers_decision_tooltip
+
+	is_shown = {
+		is_landed = yes
+		has_character_flag = wants_to_marry_off_courtiers
+	}
+
+	effect = {
+		custom_tooltip = disable_marry_off_courtiers_decision_effect
+		hidden_effect = {
+			remove_character_flag = wants_to_marry_off_courtiers
+		}
+	}
+
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+}
