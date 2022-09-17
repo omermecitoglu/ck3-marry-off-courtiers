@@ -1,4 +1,8 @@
 ﻿courtier_can_marry = {
+	is_adult = yes
+	NOT = {
+		dynasty = root.dynasty
+	}
 	root = {
 		is_character_interaction_valid = {
 			recipient = prev
