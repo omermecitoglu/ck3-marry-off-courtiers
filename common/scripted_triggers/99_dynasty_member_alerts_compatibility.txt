@@ -1,0 +1,8 @@
+﻿dma_marriage_module_is_active = {
+	root = {
+		has_character_flag = is_organizing_dynasty_members
+		NOT = {
+			has_global_variable = dynasty_member_alerts_marriage_disabled
+		}
+	}
+}

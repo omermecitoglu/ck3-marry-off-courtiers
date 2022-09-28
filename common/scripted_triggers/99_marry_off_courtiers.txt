@@ -1,7 +1,18 @@
 ﻿courtier_can_marry = {
 	is_adult = yes
-	NOT = {
-		dynasty = root.dynasty
+
+	trigger_if = {
+		limit = {
+			dma_marriage_module_is_active = yes
+		}
+		NOT = {
+			dynasty = root.dynasty
+		}
+	}
+	trigger_else = {
+		NOT = {
+			is_close_family_of = root
+		}
 	}
 
 	trigger_if = {
