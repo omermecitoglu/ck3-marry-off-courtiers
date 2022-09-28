@@ -19,3 +19,5 @@
   disable_marry_off_courtiers_decision_tooltip: "Disable notifications about single courtiers"
   disable_marry_off_courtiers_decision_confirm: "I'm quite busy right now, dismiss them"
   disable_marry_off_courtiers_decision_effect: "#N You won't be notified about single courtiers anymore.#!"
+
+  moc_widget_ignore_infertile: "Ignore infertile courtiers"

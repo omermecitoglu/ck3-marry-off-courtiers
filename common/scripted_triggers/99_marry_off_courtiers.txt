@@ -3,6 +3,14 @@
 	NOT = {
 		dynasty = root.dynasty
 	}
+
+	trigger_if = {
+		limit = {
+			has_global_variable = disable_marrying_off_infertile_courtiers
+		}
+		is_visibly_fertile = yes
+	}
+
 	root = {
 		is_character_interaction_valid = {
 			recipient = prev

@@ -1,0 +1,41 @@
+marry_off_courtiers_widget_main = {}
+
+types MarryOffCourtiersDecisionWidget
+{
+	type moc_toggle_infertile = button_checkbox_label
+	{
+		datacontext = "[GetScriptedGui('toggle_marrying_off_infertile_courtiers')]"
+		onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+		# tooltip = "you can add some tooltip"
+
+		blockoverride "checkbox"
+		{
+			checked = "[ScriptedGui.IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+		}
+
+		blockoverride "text"
+		{
+			text = "moc_widget_ignore_infertile"
+		}
+	}
+	type marry_off_courtiers_widget_main = flowcontainer
+	{
+		name = "marry_off_courtiers_widget"
+		direction = vertical
+		minimumsize = { 514 -1 }
+		maximumsize = { 514 -1 }
+		ignoreinvisible = yes
+		margin_top = 8
+
+		vbox = {
+			vbox = {
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					margin_bottom = 8
+					moc_toggle_infertile = {}
+					expand = {}
+				}
+			}
+		}
+	}
+}

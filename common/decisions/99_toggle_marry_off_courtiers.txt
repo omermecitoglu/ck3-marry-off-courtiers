@@ -14,7 +14,6 @@
 		}
 		any_courtier = {
 			courtier_can_marry = yes
-			count > 0
 		}
 	}
 
@@ -31,6 +30,10 @@
 
 	ai_will_do = {
 		base = 0
+	}
+
+	widget = {
+		gui = "marry_off_courtiers_widget"
 	}
 }
 
@@ -61,5 +64,9 @@ disable_marry_off_courtiers_decision = {
 
 	ai_will_do = {
 		base = 0
+	}
+
+	widget = {
+		gui = "marry_off_courtiers_widget"
 	}
 }

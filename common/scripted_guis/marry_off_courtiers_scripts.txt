@@ -1,0 +1,17 @@
+﻿toggle_marrying_off_infertile_courtiers = {
+	scope = character
+	is_shown = {
+		has_global_variable = disable_marrying_off_infertile_courtiers
+	}
+	effect = {
+		if = {
+			limit = {
+				has_global_variable = disable_marrying_off_infertile_courtiers
+			}
+			remove_global_variable = disable_marrying_off_infertile_courtiers
+		}
+		else = {
+			set_global_variable = disable_marrying_off_infertile_courtiers
+		}
+	}
+}
