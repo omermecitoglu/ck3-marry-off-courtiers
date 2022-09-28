@@ -17,3 +17,4 @@
   disable_marry_off_courtiers_decision_tooltip: "Désactiver les notifications concernant les courtisans célibataires"
   disable_marry_off_courtiers_decision_confirm: "Je suis occupé, qu'ils disposent"
   disable_marry_off_courtiers_decision_effect: "#N Vous ne serez plus notifié concernant les courtisans célibataires.#!"
+  moc_widget_ignore_infertile: "Ignorer les courtisans stériles"
