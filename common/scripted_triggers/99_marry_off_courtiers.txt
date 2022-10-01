@@ -4,6 +4,7 @@
 	trigger_if = {
 		limit = {
 			dma_marriage_module_is_active = yes
+			exists = dynasty
 		}
 		NOT = {
 			dynasty = root.dynasty
@@ -12,6 +13,25 @@
 	trigger_else = {
 		NOT = {
 			is_close_family_of = root
+		}
+	}
+
+	trigger_if = {
+		limit = {
+			has_global_variable = disable_marrying_off_unworthy_courtiers
+		}
+		OR = {
+			has_trait = beauty_good_1
+			has_trait = beauty_good_2
+			has_trait = beauty_good_3
+			has_trait = intellect_good_1
+			has_trait = intellect_good_2
+			has_trait = intellect_good_3
+			has_trait = physique_good_1
+			has_trait = physique_good_2
+			has_trait = physique_good_3
+			has_trait = fecund
+			has_trait = pure_blooded
 		}
 	}
 

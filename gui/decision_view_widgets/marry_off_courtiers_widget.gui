@@ -2,11 +2,27 @@ marry_off_courtiers_widget_main = {}
 
 types MarryOffCourtiersDecisionWidget
 {
+	type moc_toggle_unworthy = button_checkbox_label
+	{
+		datacontext = "[GetScriptedGui('toggle_marrying_off_unworthy_courtiers')]"
+		onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+		# tooltip = "moc_widget_ignore_unworthy_tooltip"
+
+		blockoverride "checkbox"
+		{
+			checked = "[ScriptedGui.IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+		}
+
+		blockoverride "text"
+		{
+			text = "moc_widget_ignore_unworthy"
+		}
+	}
 	type moc_toggle_infertile = button_checkbox_label
 	{
 		datacontext = "[GetScriptedGui('toggle_marrying_off_infertile_courtiers')]"
 		onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
-		# tooltip = "you can add some tooltip"
+		# tooltip = "moc_widget_ignore_infertile_tooltip"
 
 		blockoverride "checkbox"
 		{
@@ -29,6 +45,12 @@ types MarryOffCourtiersDecisionWidget
 
 		vbox = {
 			vbox = {
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					margin_bottom = 8
+					moc_toggle_unworthy = {}
+					expand = {}
+				}
 				hbox = {
 					layoutpolicy_horizontal = expanding
 					margin_bottom = 8
