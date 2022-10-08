@@ -17,4 +17,5 @@
   disable_marry_off_courtiers_decision_tooltip: "Benachrichtigungen über ledige Höflinge ausschalten"
   disable_marry_off_courtiers_decision_confirm: "Ich bin im Moment sehr beschäftigt, weise sie ab"
   disable_marry_off_courtiers_decision_effect: "#N Du wirst nicht mehr über ledige Höflinge benachrichtigt. #!"
+  moc_widget_ignore_unworthy: "Zucht [congenital|E] Modus"
   moc_widget_ignore_infertile: "Unfruchtbare Höflinge ignorieren"
