@@ -1,0 +1,37 @@
+﻿on_death = {
+	on_actions = {
+		marry_off_courtiers_on_death
+	}
+}
+
+marry_off_courtiers_on_death = {
+	trigger = {
+		exists = player_heir
+	}
+	effect = {
+		if = {
+			limit = {
+				has_character_flag = wants_to_marry_off_courtiers
+			}
+			player_heir = {
+				add_character_flag = wants_to_marry_off_courtiers
+			}
+		}
+		if = {
+			limit = {
+				has_character_flag = disable_marrying_off_unworthy_courtiers
+			}
+			player_heir = {
+				add_character_flag = disable_marrying_off_unworthy_courtiers
+			}
+		}
+		if = {
+			limit = {
+				has_character_flag = disable_marrying_off_infertile_courtiers
+			}
+			player_heir = {
+				add_character_flag = disable_marrying_off_infertile_courtiers
+			}
+		}
+	}
+}
