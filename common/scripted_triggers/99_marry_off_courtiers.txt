@@ -18,7 +18,7 @@
 
 	trigger_if = {
 		limit = {
-			has_global_variable = disable_marrying_off_unworthy_courtiers
+			has_character_flag = disable_marrying_off_unworthy_courtiers
 		}
 		OR = {
 			has_trait = beauty_good_1
@@ -37,7 +37,7 @@
 
 	trigger_if = {
 		limit = {
-			has_global_variable = disable_marrying_off_infertile_courtiers
+			has_character_flag = disable_marrying_off_infertile_courtiers
 		}
 		is_visibly_fertile = yes
 	}

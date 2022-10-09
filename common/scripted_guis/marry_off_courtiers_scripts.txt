@@ -1,17 +1,17 @@
 ﻿toggle_marrying_off_unworthy_courtiers = {
 	scope = character
 	is_shown = {
-		has_global_variable = disable_marrying_off_unworthy_courtiers
+		has_character_flag = disable_marrying_off_unworthy_courtiers
 	}
 	effect = {
 		if = {
 			limit = {
-				has_global_variable = disable_marrying_off_unworthy_courtiers
+				has_character_flag = disable_marrying_off_unworthy_courtiers
 			}
-			remove_global_variable = disable_marrying_off_unworthy_courtiers
+			remove_character_flag = disable_marrying_off_unworthy_courtiers
 		}
 		else = {
-			set_global_variable = disable_marrying_off_unworthy_courtiers
+			add_character_flag = disable_marrying_off_unworthy_courtiers
 		}
 	}
 }
@@ -19,17 +19,17 @@
 toggle_marrying_off_infertile_courtiers = {
 	scope = character
 	is_shown = {
-		has_global_variable = disable_marrying_off_infertile_courtiers
+		has_character_flag = disable_marrying_off_infertile_courtiers
 	}
 	effect = {
 		if = {
 			limit = {
-				has_global_variable = disable_marrying_off_infertile_courtiers
+				has_character_flag = disable_marrying_off_infertile_courtiers
 			}
-			remove_global_variable = disable_marrying_off_infertile_courtiers
+			remove_character_flag = disable_marrying_off_infertile_courtiers
 		}
 		else = {
-			set_global_variable = disable_marrying_off_infertile_courtiers
+			add_character_flag = disable_marrying_off_infertile_courtiers
 		}
 	}
 }
