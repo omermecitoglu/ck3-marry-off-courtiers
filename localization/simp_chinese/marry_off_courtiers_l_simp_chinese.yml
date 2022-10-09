@@ -17,3 +17,5 @@
   disable_marry_off_courtiers_decision_tooltip: "禁用单身庭臣的通知"
   disable_marry_off_courtiers_decision_confirm: "太忙了，走开！"
   disable_marry_off_courtiers_decision_effect: "#N 你将不再收到单身庭臣的通知#!"
+  moc_widget_ignore_unworthy: "优生优育[congenital|E]模式"
+  moc_widget_ignore_infertile: "忽略不孕者"
